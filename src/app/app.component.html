@@ -1,4 +1,7 @@
-<div id="{{post.id}}" class="card" style="width:40%; margin-left:30%; margin-top:1%;" *ngFor="let post of posts">
+<div class="row">
+<div class="col-0 col-sm-2 col-md-3"></div>
+<div class="card col-12 col-sm-8 col-md-6">
+<div id="{{post.id}}" class="card" style="margin-top:1%;" *ngFor="let post of posts">
   <div class="card-body">
     <div class="row">
       <div class="col-md-2"><img [src]="post.posterImage" style="width:100%; border-radius: 50%;"></div>
@@ -21,46 +24,58 @@
     </video>
     <div class="row">
       <div class="col-md-6">
-        <img title={{post.reactionDetails.love}} *ngIf="post.reactionDetails.love != 0"  width="10%"
+        <img title={{post.reactionDetails.love}} *ngIf="post.reactionDetails.love != 0" width="10%"
           src="data:image/png;base64,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">
         <img title={{post.reactionDetails.like}} *ngIf="post.reactionDetails.like != 0" width="10%"
           src="https://appstickers-cdn.appadvice.com/1153896270/818879420/5f8092415e8faa7fa0f441848789ad85-6.png">
         <img title={{post.reactionDetails.hah}} *ngIf="post.reactionDetails.hah != 0" width="10%"
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALIAAACyCAMAAADRVGVaAAAA1VBMVEX/0gL////TGBgAAAC/ngL/1Av/2Sf/4Vr/42T/++r//fX/3UD/9MCykwH/1hn/2i3/7qH/+duSeAH/8rX4zAIMCgD/87r/99LnvgL/30r/6H//6o2DbAHYKxb/5nLJpgKafwH/8Kz/9cnYsgI4LgBkUgEUEQApIgBvWwHzoAgSAgJqDAzbOBT3rwYjHQAxKABOQAFKCQn8xgN0DQ3qdw3nbQ76vAXvjQtVRgGSERGkExNaCgo8Bwe/FhbkXxDhUxLeRxOEDw8zBgYgBAQpBQWQbAPIXQyeFKEsAAAIZklEQVR4nO2de1viOhCH48HeALmIooAi4K6KwCqr63111d3z/T/SaalCmyaZSZukZZ/z+1ds3iedTKa5zJANdSo3242u26nU7ZpFAtXseqXjdhutZllhM0TNY8rtnlMPOZmy6k6v5alpSwFys+HYfNiobKfRzB253O7XcbhL7H4ro5VkQS4PHYEt8GU5wyzU6ZGr6Xg/qaumkb0e0nz5snsph2Mq5D03QwdHutrdM4Tc6qjgDdVpG0CuVtQBB6pIG7Uk8kgx8AJ6pBG56agHDtSRsmkJ5HJXyaBjyepKOGo8ciuzWxPJxo9DLLKnySZWcrBuGoncrukm9kPVlkLksvYuDuWiLBqDvCcZrKVXHeM6EMgNbY4iKauhArlvDjiQmxnZ0zDdiVWBPAeA3NTqjNmygY8tMfLIgG9LqiYOOoTIbYMDLypLGN2JkE26Cop5mA65kRdwIIGz4yPnSixi5iLnTCxg5iHnNfIiGsohj/In5voNNnIzF39Mq8YOkpjIXg5zHks2c+5mIhuPK3iqYJENx24i9XHIubu3qBiuLom8VwBnsZKVHIIJ5LKxryac6onvwQSyoS9TvBKfKTRyO2/CpOi1AgrZK8QcElfNEyK7efOx5IiQW3nTsdXmI5cLMlHTsstc5C7j5ztb21um0Py2Npl/6PKQm4xJ5OikVCp9MwK9c7Drt3Wxz/iT1eQgM1zyfvCU4EHaoXe2T8KmTncYf3XYyCPGTw9Kn/rCfmWqNPi2bInZOyMmMivkvCutdHmkDXjrItLOAesXFRYyc947K0V1d6wF+OhLrJUB80dVBjIzrj8qxfWVNTgyAl/Gm9hlN1FJInNmkQOKefdMLfT+V6oBtimTSDcvkXm7vJtfaOgD1pBOCXxGA19yba9DI+/xn7t1Sj32ZFsNdOiIoxK6pT0KWRgPDU6oR6uYW5aOeKlT8VOdOLIn/nqSfjysiCP+6IYB8O4sL4bcg1pIvsRMbjqVsXVjyIgQbv8sAZ3WTacc0nYUuYpqKemQtlMR049BO85qBBn7jXpMuf1SmsBjm3oGfnpyV8hl/NIF9U6/pkC+iD1BJgiwykvkoUyLsdd6KcvrK+Z85ExruESWWLs4yrOXQ9dMpOwiYctpHF16Ww4tg/DCToZy9xjhMkyAjFuczd8vk9BnBMiYhcMizH4knE185CYCWEOMkQi1Bph/ay6Q4SXwZAizlT38THYD5jO+sUCGXJzJeBk0NneBLA6JCvNVEsoOkMvCn2j/9rujoQHr8HxkoVcuzhf2p1o+sjC6j7+41I5YrE3MOsanuj6ycPQVZrVoKcdHFk4kK1O+yHdNbqn6BhHHRPufy5E5r3yuZG0QYO5brC+fQB+/ShS66VNovHgECuOCVXwTwIu2Bogdgyop1I41Rg3C2h8ptLqkkDt9IrlE4b0WM+qQwpxwwapCCnaWAVadFHRDlS+bFPBogFhrB+zP2HkDyGsNkf+XCVnrZxrW+vmMGjCVHG+aFxCd28CEnVgaMSDgs6QOhEV5IANLJRUg+KRX3E0IMAwHCPG3zBPviolJH/iQ2jSPfAog94DP1X3zyNC+XANaFKCXrfXrDECuQksv9Oqyfg0AZA9Y4MrBywGLlRa0jEgGxpEBH1eBFmvJsWniCzExcaElcfPjDxp9PWjjIbl7K9L5+9v88XEyuXoNdHU1mTzOn36fSyFD64htcHsHZcznb/PJ/cPPf3j6+XB/9fiEQt+FVlk9eBMNmEze51f3fFZKD6+PbwAyNJHYmK1Kvmd+muBpI9xXov6Gzh64mA1hdjD3NnmQp41095yDDW3ShRvCnvhHScs4n7+m6F1a95N3ebv42HaHDsndUbxZujeuhwQ15C9quCMk0Zh5nsZ6hdSPUQs5gfyFizyo87kl936lmDfU/dMSGZpHlgd1oONQ4QBUaBC0fk7OcYNveRwKcnM7J6XziZYOXun1N6aTHfTRvj96LCKuhyfgjACJHu2DLOP7oX5iX/9CxJEDlOCduVsTxIffIeTIMVX4MPDUAPI1BBE7DAweuZ7pJ56CO+WxI9fwwfZn7chjsJN7MtcHDIzAZ5CYuj4AX1od6yWegmOPvqQhugrzoR9akWdg+4mrMNwLR0vt6PQasLdIXjhCXHq40WfOLzAx41oXIimGNnNGGDLr8hzmbommSfDwRqaToxdBEYdJrrUQI4Ye+yIowmnocRvwHEJ4121RdzXUM6OIOZeamVfHdTMfooi5V8eZF/QTUmrPKDsWXNBHpkFQ6OumGF8hTIOAvEQ3VjWnvCBPZsYzW6VK6XHzSwkxYpZeiMr2kjJxioJBiBt4BEycgs5DMstqHC+ISToUkJ4Gn+3le6aOnmK7mJHTKkOqpQwW/QPdxZhUSzIJrcbpQugXnGtbCJPQSi5t2K089Atu9vgQKm2YZPKisZR5HD5L9DBBJ2eTTYE3+4H1Hr9u8Ta8UIWVQ1pNosHxM0w9vZbrYCKVaDBNOsfZtcBCDp9vpXn9OYSdIlhp0szZ7fMvurunL9fjFLi+LE6CYF5q0mr6U4o3s/H4NtB4PEsHG4qXwJ2bAFbqBrwODXlkf1Oa3XVMZpwr81CAJUzM3corMbewdEIh05+LC8UUMMk8JyEwFnkNU/lvGE+62weraSDKUgzXrizFOhb/8L8HDd1jhI0Cjex76HUrZOPL097RruJyQb6qeosy4euM/dWlrzb0FZNypCpYypZx03ChuKOzjFug9roVywtUVVmSMEXJyhTI/nSYpbLmSpZjqvBjoLUrr7lQNUuNTcs1XsR0obUrFRtSt/qSFlJz8yzI+6Fmw0VGp7ZbgLLHn/LaPbciLi7dLVBx6ZW8UaP3UcLbx7esoIS30+81qopgQ/0HPxbEbMXjoMoAAAAASUVORK5CYII=">
-        <img title={{post.reactionDetails.wow}}  *ngIf="post.reactionDetails.wow != 0" width="10%" src="https://cdn.freebiesupply.com/logos/large/2x/facebook-wow-logo-png-transparent.png">
-        <img title={{post.reactionDetails.sad}} *ngIf="post.reactionDetails.sad != 0" width="10%" src="https://www.shareicon.net/data/512x512/2016/08/01/640380_emoticon_512x512.png">
-        <img title={{post.reactionDetails.angry}} *ngIf="post.reactionDetails.angry != 0" width="10%" src="https://cdn4.iconfinder.com/data/icons/reaction/32/angry-512.png">
+        <img title={{post.reactionDetails.wow}} *ngIf="post.reactionDetails.wow != 0" width="10%"
+          src="https://cdn.freebiesupply.com/logos/large/2x/facebook-wow-logo-png-transparent.png">
+        <img title={{post.reactionDetails.sad}} *ngIf="post.reactionDetails.sad != 0" width="10%"
+          src="https://www.shareicon.net/data/512x512/2016/08/01/640380_emoticon_512x512.png">
+        <img title={{post.reactionDetails.angry}} *ngIf="post.reactionDetails.angry != 0" width="10%"
+          src="https://cdn4.iconfinder.com/data/icons/reaction/32/angry-512.png">
         <span>&#160;{{post.reactionDetails.like+post.reactionDetails.hah+post.reactionDetails.love+post.reactionDetails.wow+post.reactionDetails.sad+post.reactionDetails.angry}}</span>
       </div>
-      <div class="col-md-6" >
+      <div class="col-md-6">
         <p class="comment" (click)="viewComments($event)" style="display: inline;">
-          <span >{{post.numOfComment}} comment</span>
+          <span>{{post.numOfComment}} comment</span>
         </p>
-          <span>&#160;{{post.numOfShare}} share</span>
+        <span>&#160;{{post.numOfShare}} share</span>
       </div>
     </div>
   </div>
   <div class="card-footer">
-  <div class="row">
-    <div class="col-md-4"> <button class="btn btn-default">Like</button></div>
-    <div class="col-md-4"><button class="btn btn-default">Comment</button></div>
-    <div class="col-md-4"><button class="btn btn-default"> Share</button></div>
-  </div>
+    <div class="row">
+      <div class="col-md-4"> <button class="btn btn-default">Like</button></div>
+      <div class="col-md-4"><button class="btn btn-default">Comment</button></div>
+      <div class="col-md-4"><button class="btn btn-default"> Share</button></div>
+    </div>
   </div>
   <div class="card-body" *ngIf="viewCom==true&&detectPost==post.id&&post.comments!=[]">
-    <div class="card-body" id="{{comment.id}}" *ngFor="let comment of post.comments" style=" margin: 2%; background-color: #f2f3f5; border-radius: 2%;">
+    <div class="card-body" id="{{comment.id}}" *ngFor="let comment of post.comments"
+      style=" margin: 2%; background-color: #f2f3f5; border-radius: 2%;">
       <div class="row">
         <div class="col-md-2"><img width="40%" [src]="comment.commenterImage"></div>
-        <div class="col-md-10"><p class="text-primary">{{comment.commenter}}</p></div>
+        <div class="col-md-10">
+          <p class="text-primary">{{comment.commenter}}</p>
+        </div>
       </div>
       <div class="row">
-        <div class="col-md-12"><p>{{comment.comment}}</p></div>
+        <div class="col-md-12">
+          <p>{{comment.comment}}</p>
+        </div>
       </div>
       <div class="row">
-        <div class="col-md-12"><p><span style="color: blue;"> &#160;Like&#160;</span><span style="color: blue;" (click)="veiwReply($event)">&#160;reply&#160;</span><span>&#160;{{comment.ago}}&#160;</span></p></div>
+        <div class="col-md-12">
+          <p><span style="color: blue;"> &#160;Like&#160;</span><span style="color: blue;"
+              (click)="veiwReply($event)">&#160;reply&#160;</span><span>&#160;{{comment.ago}}&#160;</span></p>
+        </div>
       </div>
       <div class="card-body" *ngIf="viewRep==true&&detectComm==comment.id&&comment.replies!=[]">
-        <div id="{{reply.id}}" *ngFor="let reply of comment.replies"  style="border-radius: 2%; background-color: papayawhip; margin: 2%; padding: 2%;">
+        <div id="{{reply.id}}" *ngFor="let reply of comment.replies"
+          style="border-radius: 2%; background-color: papayawhip; margin: 2%; padding: 2%;">
           <div class="row">
             <div class="col-md-2"><img width="40%" [src]="reply.replierImage"></div>
             <div class="col-md-10">
@@ -80,7 +95,10 @@
         </div>
       </div>
     </div>
-    
+
   </div>
- 
+
+</div>
+</div>
+<div class="col-0 col-sm-2 col-md-3"></div>
 </div>
