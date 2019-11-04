@@ -7,3 +7,4 @@ app.use(cors());
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/dist/newsFeed/index.html'));
 })
+app.listen(process.env.PORT || 3000);
