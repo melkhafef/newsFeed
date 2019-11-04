@@ -1,0 +1,210 @@
+[
+    {
+        "id": "1",
+        "posterImage": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1502826406%2F1708w-getty-fruit-closeup-CarstenSchanter-EyeEm.jpg%3Fitok%3DXFE9vQPZ&w=400&c=sc&poi=face&q=85",
+        "posterName": "Ahmed",
+        "postContent": {
+            "text": "helloooooooooooooooo",
+            "image": "",
+            "video": ""
+        },
+        "ago": "4hrs",
+        "numOfComment": 28,
+        "numOfShare": 18,
+        "comments": [
+            {
+                "id":"1",
+                "commenterImage":"https://svgsilh.com/svg/23297-394f1e.svg",
+                "commenter":"nader",
+                "ago":"3hr",
+                "comment": "good",
+                "replies": [
+                    {
+                        "id": "1",
+                        "replierImage": "https://svgsilh.com/svg/1969921.svg",
+                        "replier": "hady",
+                        "ago": "39min",
+                        "reply": "welcome"
+                    }
+                ]
+            },
+            {
+                "id":"2",
+                "commenterImage": "https://svgsilh.com/svg/1010292.svg",
+                "commenter": "ali",
+                "ago": "2hr",
+                "comment": "yes",
+                "replies": []
+            },
+            {
+                "id":"3",
+                "commenterImage": "https://svgsilh.com/svg/146748.svg",
+                "commenter": "faris",
+                "ago": "1hr",
+                "comment": "welcome",
+                "replies": [
+                    {
+                        "id":"1",
+                        "replierImage": "https://svgsilh.com/svg/3216254-03a9f4.svg",
+                        "replier": "hady",
+                        "ago": "39min",
+                        "reply": "welcome"},
+                    {
+                        "id":"2",
+                        "replierImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj78cGJR3XyX3IqePaQJ9KKr4unYdllT-LXCPPnFSr0njWuTHjsA&s",
+                        "replier": "nour",
+                        "ago": "15sec",
+                        "reply": "welcome"}
+                ]
+            }
+        ],
+        "reactionDetails": {
+            "like": 670,
+            "love": 158,
+            "sad": 3,
+            "wow": 0,
+            "angry": 0,
+            "hah": 0
+        }
+    },
+    {
+        "id": "2",
+        "posterImage": "http://ichef.bbci.co.uk/images/ic/480xn/p06jb0m6.jpg",
+        "posterName": "Mohamed",
+        "postContent": {
+            "text": "",
+            "image": "https://media.linkonlineworld.com/img/yallakora/Players//Players/MohamedSalah_1618.jpg",
+            "video": ""
+        },
+        "ago": "October 31 at 1:33 PM ",
+        "numOfComment": "11",
+        "numOfShare": "21",
+        "comments": [
+            {
+                "id": "1",
+                "commenterImage": "https://svgsilh.com/svg/23297-394f1e.svg",
+                "commenter": "nader",
+                "ago": "3hr",
+                "comment": "good",
+                "replies": [
+                    {
+                        "id": "1",
+                        "replierImage": "https://svgsilh.com/svg/1969921.svg",
+                        "replier": "hady",
+                        "ago": "39min",
+                        "reply": "welcome"
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "commenterImage": "https://svgsilh.com/svg/1010292.svg",
+                "commenter": "ali",
+                "ago": "2hr",
+                "comment": "yes",
+                "replies": []
+            },
+            {
+                "id": "3",
+                "commenterImage": "https://svgsilh.com/svg/146748.svg",
+                "commenter": "faris",
+                "ago": "1hr",
+                "comment": "welcome",
+                "replies": [
+                    {
+                        "id": "1",
+                        "replierImage": "https://svgsilh.com/svg/3216254-03a9f4.svg",
+                        "replier": "hady",
+                        "ago": "39min",
+                        "reply": "welcome"
+                    },
+                    {
+                        "id": "2",
+                        "replierImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj78cGJR3XyX3IqePaQJ9KKr4unYdllT-LXCPPnFSr0njWuTHjsA&s",
+                        "replier": "nour",
+                        "ago": "15sec",
+                        "reply": "welcome"
+                    }
+                ]
+            }
+        ],
+        "reactionDetails": {
+            "like": 43,
+            "love": 25,
+            "sad": 0,
+            "wow": 35,
+            "angry": 4,
+            "hah": 0
+        }
+    },
+    {
+        "id": "3",
+        "posterImage": "https://www.bitdegree.org/tutorials/wp-content/uploads/2018/08/what-is-a-web-developer.jpg",
+        "posterName": "Abdo",
+        "postContent": {
+            "text": "",
+            "image": "",
+            "video": "./assets/videos/js.mp4"
+        },
+        "ago": "1min",
+        "numOfComment": "3",
+        "numOfShare": "1",
+        "comments": [
+            {
+                "id": "1",
+                "commenterImage": "https://svgsilh.com/svg/23297-394f1e.svg",
+                "commenter": "nader",
+                "ago": "3hr",
+                "comment": "good",
+                "replies": [
+                    {
+                        "id": "1",
+                        "replierImage": "https://svgsilh.com/svg/1969921.svg",
+                        "replier": "hady",
+                        "ago": "39min",
+                        "reply": "welcome"
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "commenterImage": "https://svgsilh.com/svg/1010292.svg",
+                "commenter": "ali",
+                "ago": "2hr",
+                "comment": "yes",
+                "replies": []
+            },
+            {
+                "id": "3",
+                "commenterImage": "https://svgsilh.com/svg/146748.svg",
+                "commenter": "faris",
+                "ago": "1hr",
+                "comment": "welcome",
+                "replies": [
+                    {
+                        "id": "1",
+                        "replierImage": "https://svgsilh.com/svg/3216254-03a9f4.svg",
+                        "replier": "hady",
+                        "ago": "39min",
+                        "reply": "welcome"
+                    },
+                    {
+                        "id": "2",
+                        "replierImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj78cGJR3XyX3IqePaQJ9KKr4unYdllT-LXCPPnFSr0njWuTHjsA&s",
+                        "replier": "nour",
+                        "ago": "15sec",
+                        "reply": "welcome"
+                    }
+                ]
+            }
+        ],
+        "reactionDetails": {
+            "like": 67,
+            "love": 15,
+            "sad": 3,
+            "wow": 5,
+            "angry": 54,
+            "hah": 34
+        }
+    }
+]
